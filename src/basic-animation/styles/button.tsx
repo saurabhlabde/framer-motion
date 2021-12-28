@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 import { motion } from "framer-motion";
 
-export const Border = styled(motion.div)`
+export const Outline = styled(motion.div)`
   background-color: rgba(51, 170, 255, 0);
 
   width: 358px;
   height: 58px;
   border-radius: 24px;
+  padding: 4px;
 
   display: flex;
   align-items: center;
@@ -17,8 +18,8 @@ export const Border = styled(motion.div)`
 export const Container = styled(motion.div)`
   background-color: #33aaff;
 
-  width: 350px;
-  height: 50px;
+  height: 100%;
+  width: 100%;
   border-radius: 21px;
   box-shadow: 0px 1px 75px 0px rgba(0, 0, 0, 0.1);
 

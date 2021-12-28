@@ -1,10 +1,10 @@
 import React from "react";
-import { useAnimation } from "framer-motion";
+import { AnimatePresence, useAnimation } from "framer-motion";
 
 // style
-import { Container, Border, Title, TitleSection } from "../styles/button";
+import { Container, Outline, Title, TitleSection } from "../styles/button";
 
-const borderVariants = {
+const outlineVariants = {
   visible: {
     backgroundColor: "rgba(51, 170, 255, 0.3)",
     scale: 1.01,
@@ -23,21 +23,24 @@ const borderVariants = {
   },
 };
 
-const buttonVariants = {};
-
 export const Button: React.FC = () => {
   const [buttonHover, setButtonHover] = React.useState<boolean>(false);
 
-  const borderAnimation = useAnimation();
+  const outlineAnimation = useAnimation();
 
   React.useEffect(() => {
-    borderAnimation.start(
-      buttonHover ? borderVariants.visible : borderVariants.hidden
+    outlineAnimation.start(
+      buttonHover ? outlineVariants.visible : outlineVariants.hidden
     );
   }, [buttonHover]);
 
   return (
-    <Border animate={borderAnimation}>
+    <Outline
+      animate={outlineAnimation}
+      exit={{
+        opacity: 1,
+      }}
+    >
       <Container
         onHoverStart={() => {
           return setButtonHover(true);
@@ -57,6 +60,6 @@ export const Button: React.FC = () => {
           <Title>log in</Title>
         </TitleSection>
       </Container>
-    </Border>
+    </Outline>
   );
 };

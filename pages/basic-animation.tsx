@@ -1,10 +1,12 @@
 import { useRouter } from "next/router";
+import { AnimatePresence } from "framer-motion";
 import styles from "../styles/Home.module.css";
 
 // component
 import { HeadTag } from "../src/components/Heading";
-import { Button } from "../src/basic-animation/components/Button";
 import { H1 } from "../src/components/H1";
+import { Button } from "../src/basic-animation/components/Button";
+import { TextInput } from "../src/basic-animation/components/Input";
 
 const BasicAnimation = () => {
   const router = useRouter();
@@ -21,11 +23,13 @@ const BasicAnimation = () => {
           justifyContent: "center",
         }}
       >
-        <H1 title="basic button" />
-        <Button />
+        <AnimatePresence>
+          <H1 title="basic button" />
+          <Button />
 
-        <H1 title="basic button" />
-        <Button />
+          <H1 title="basic input" />
+          <TextInput />
+        </AnimatePresence>
       </main>
     </div>
   );
