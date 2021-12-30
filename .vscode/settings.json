@@ -5,5 +5,8 @@
                 ".vscode": true,
                 "public": false
         },
-        "workspace.isHidden": false
+        "workspace.isHidden": false,
+        "cSpell.ignoreWords": [
+                "saurabh"
+        ]
 }

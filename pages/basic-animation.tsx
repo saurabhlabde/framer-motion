@@ -7,6 +7,7 @@ import { HeadTag } from "../src/components/Heading";
 import { H1 } from "../src/components/H1";
 import { Button } from "../src/basic-animation/components/Button";
 import { TextInput } from "../src/basic-animation/components/Input";
+import { PostCard } from "../src/basic-animation/components/PostCard";
 
 const BasicAnimation = () => {
   const router = useRouter();
@@ -29,6 +30,9 @@ const BasicAnimation = () => {
 
           <H1 title="basic input" />
           <TextInput />
+
+          <H1 title="post card" />
+          <PostCard />
         </AnimatePresence>
       </main>
     </div>
