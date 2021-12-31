@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "home",
+    "highlightTitle": null,
+    "href": "home"
+  },
+  {
+    "id": 2,
+    "title": "about",
+    "highlightTitle": null,
+    "href": "about"
+  },
+  {
+    "id": 3,
+    "title": "portfolio",
+    "highlightTitle": null,
+    "href": "portfolio"
+  },
+  {
+    "id": 4,
+    "title": "pricing",
+    "highlightTitle": ".",
+    "href": "pricing"
+  }
+]

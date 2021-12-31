@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatePresence } from "framer-motion";
 
 // component
 import { Navbar } from "./components/Navbar";
@@ -12,13 +13,15 @@ import { Main, Background, Content } from "./styles/index";
 export const Portfolio = () => {
   return (
     <Main>
-      <Background />
-      <Content>
-        <Navbar />
-        <Heading />
-        <Footer />
-        <BackgroundIcon />
-      </Content>
+      <AnimatePresence>
+        <Content>
+          <Navbar />
+          <Heading />
+          <Footer />
+          <BackgroundIcon />
+        </Content>
+        <Background />
+      </AnimatePresence>
     </Main>
   );
 };

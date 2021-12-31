@@ -4,6 +4,7 @@ export const HeadingSection = styled.div`
   margin-top: 0px;
   padding-left: 50px;
   cursor: default;
+  margin-top: -20px;
 `;
 
 export const HeadingNameSection = styled.div``;
@@ -26,8 +27,24 @@ export const HeadingName = styled(HName)`
   color: #3a3636;
 `;
 
+export const HeadingNameHighlighSection = styled.div`
+  position: relative;
+  width: 55%;
+`;
+
 export const HeadingNameHighlight = styled(HName)`
   color: #ffae00;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+`;
+
+export const SpanHeading = styled.span`
+  font-weight: bold;
+`;
+
+export const SpanSubHeading = styled.span`
+  font-weight: 500;
 `;
 
 export const SubHeadingNameSection = styled.div`

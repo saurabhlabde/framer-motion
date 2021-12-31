@@ -1,6 +1,7 @@
 import React from "react";
 
 // component
+import { NavItem } from "./NavItem";
 import { Button } from "./Button";
 
 // style
@@ -10,11 +11,11 @@ import {
   LogoName,
   LogoNameHighlight,
   Items,
-  Item,
-  ItemName,
-  ItemNameHighlight,
   Contact,
 } from "../styles/navbar";
+
+// data
+import NavItemData from "../data/nav.json";
 
 export const Navbar = () => {
   return (
@@ -25,22 +26,9 @@ export const Navbar = () => {
       </Logo>
 
       <Items>
-        <Item>
-          <ItemName>home</ItemName>
-        </Item>
-
-        <Item>
-          <ItemName>about</ItemName>
-        </Item>
-
-        <Item>
-          <ItemName>portfolio</ItemName>
-        </Item>
-
-        <Item>
-          <ItemName>pricing</ItemName>
-          <ItemNameHighlight>.</ItemNameHighlight>
-        </Item>
+        {NavItemData.map((item) => {
+          return <NavItem props={item} />;
+        })}
       </Items>
 
       <Contact>

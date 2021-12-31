@@ -16,5 +16,5 @@ export const IconBackground = styled.div`
 `;
 
 export const Icon = styled.div`
-  transform: scale(42);
+  transform: scale(40);
 `;
