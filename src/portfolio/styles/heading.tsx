@@ -1,15 +1,24 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const HeadingSection = styled.div`
+export const HeadingSection = styled(motion.div)`
   margin-top: 0px;
   padding-left: 50px;
   cursor: default;
   margin-top: -20px;
 `;
 
-export const HeadingNameSection = styled.div``;
+export const HeadingNameSection = styled(motion.div)`
+  overflow: hidden;
+`;
 
-export const HName = styled.h1`
+export const HeadingNameHighlighSection = styled.div`
+  position: relative;
+  width: 55%;
+  overflow: hidden;
+`;
+
+export const HName = styled(motion.span)`
   font-family: "DM Sans", sans-serif;
 
   white-space: pre;
@@ -18,18 +27,12 @@ export const HName = styled.h1`
   color: #3a3636;
   font-size: 250px;
   letter-spacing: 0px;
-  line-height: 0.3;
-  text-transform: capitalize;
+  line-height: 1;
   cursor: default;
 `;
 
 export const HeadingName = styled(HName)`
   color: #3a3636;
-`;
-
-export const HeadingNameHighlighSection = styled.div`
-  position: relative;
-  width: 55%;
 `;
 
 export const HeadingNameHighlight = styled(HName)`
@@ -39,19 +42,11 @@ export const HeadingNameHighlight = styled(HName)`
   z-index: 1;
 `;
 
-export const SpanHeading = styled.span`
+export const SpanHeading = styled(motion.span)`
   font-weight: bold;
 `;
 
-export const SpanSubHeading = styled.span`
-  font-weight: 500;
-`;
-
-export const SubHeadingNameSection = styled.div`
-  margin-top: 100px;
-`;
-
-export const SubHeadingName = styled.h1`
+export const SpanSubHeading = styled(HName)`
   font-family: "DM Sans", sans-serif;
   color: #9e9a9a;
   white-space: pre;
@@ -59,5 +54,10 @@ export const SubHeadingName = styled.h1`
   font-size: 50px;
   letter-spacing: 0px;
   line-height: 0.9;
-  text-transform: capitalize;
+  font-weight: 500;
+`;
+
+export const SubHeadingNameSection = styled(motion.div)`
+  margin-top: 100px;
+  /* overflow: hidden; */
 `;
