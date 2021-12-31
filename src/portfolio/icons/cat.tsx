@@ -9,7 +9,7 @@ export const iconVariants = {
     transition: {
       ease: "easeInOut",
       duration: 3,
-      delay: 2,
+      delay: 4.5,
     },
   },
 };
