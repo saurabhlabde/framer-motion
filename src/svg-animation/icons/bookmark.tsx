@@ -1,20 +1,25 @@
 import React from "react";
+import { style } from ".";
 
 interface IBookmarkIcon {}
 
 export const BookmarkIcon = ({}: IBookmarkIcon) => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18">
+      <svg
+        width={style.HeightWidth}
+        height={style.HeightWidth}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
-          d="M 14 16.267 L 14 4.845 C 14 2.641 12.425 0.745 10.239 0.315 C 8.101 -0.105 5.899 -0.105 3.761 0.315 C 1.575 0.745 0 2.641 0 4.845 L 0 16.267 C 0 17.604 1.468 18.435 2.634 17.76 L 5.821 15.916 C 6.549 15.494 7.451 15.494 8.179 15.916 L 11.366 17.76 C 12.532 18.435 14 17.604 14 16.267 Z"
-          fill="transparent"
-          strokeWidth="1.5"
-          stroke="rgb(54,56,83)"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeDasharray=""
-        ></path>
+          d="M19 19.2674V7.84496C19 5.64147 17.4253 3.74489 15.2391 3.31522C13.1006 2.89493 10.8994 2.89493 8.76089 3.31522C6.57467 3.74489 5 5.64147 5 7.84496V19.2674C5 20.6038 6.46752 21.4355 7.63416 20.7604L10.8211 18.9159C11.5492 18.4945 12.4508 18.4945 13.1789 18.9159L16.3658 20.7604C17.5325 21.4355 19 20.6038 19 19.2674Z"
+         stroke={style.color}
+          stroke-width={style.strokeWidth}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
     </>
   );

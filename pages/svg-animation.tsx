@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 
 // component
 import { HeadTag } from "../src/components/Heading";
+import { SvgAnimation } from "../src/svg-animation";
 
 export const SvgAnimationPage = () => {
   const router = useRouter();
@@ -18,7 +19,9 @@ export const SvgAnimationPage = () => {
         style={{
           justifyContent: "center",
         }}
-      ></main>
+      >
+        <SvgAnimation />
+      </main>
     </div>
   );
 };

@@ -1,20 +1,31 @@
 import React from "react";
+import { style } from ".";
 
 interface IExportIcon {}
 
-export const Icon = ({}: IExportIcon) => {
+export const ExportIcon = ({}: IExportIcon) => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+      <svg
+        width={style.HeightWidth}
+        height={style.HeightWidth}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
-          d="M 15 6 C 13.977 6 12.953 6.118 11.95 6.353 C 9.173 7.004 7.004 9.173 6.353 11.95 C 5.882 13.956 5.882 16.044 6.353 18.05 C 7.004 20.827 9.173 22.996 11.95 23.647 C 13.956 24.118 16.044 24.118 18.05 23.647 C 20.827 22.996 22.996 20.827 23.647 18.05 C 23.882 17.047 24 16.023 24 15"
-          fill="transparent"
-          strokeWidth="1.5"
-          stroke="rgb(54,56,83)"
-          strokeLinecap="round"
-          strokeMiterlimit="10"
-          strokeDasharray=""
-        ></path>
+          d="M12 3C10.9767 3 9.95334 3.11763 8.95043 3.35288C6.17301 4.00437 4.00437 6.17301 3.35288 8.95043C2.88237 10.9563 2.88237 13.0437 3.35288 15.0496C4.00437 17.827 6.17301 19.9956 8.95044 20.6471C10.9563 21.1176 13.0437 21.1176 15.0496 20.6471C17.827 19.9956 19.9956 17.827 20.6471 15.0496C20.8824 14.0466 21 13.0233 21 12"
+         stroke={style.color}
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+        <path
+          d="M17 3H21M21 3V7.66667M21 3L15 10"
+         stroke={style.color}
+          stroke-width={style.strokeWidth}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
     </>
   );

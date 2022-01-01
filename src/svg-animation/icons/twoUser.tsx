@@ -1,27 +1,34 @@
 import React from "react";
+import { style } from ".";
 
 interface ITwoUserIcon {}
 
 export const TwoUserIcon = ({}: ITwoUserIcon) => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28">
+      <svg
+        width={style.HeightWidth}
+        height={style.HeightWidth}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
-          d="M 6 20.433 C 6 18.431 7.455 16.725 9.432 16.41 L 9.61 16.381 C 11.193 16.129 12.807 16.129 14.39 16.381 L 14.568 16.41 C 16.545 16.725 18 18.431 18 20.433 C 18 21.298 17.298 22 16.433 22 L 7.567 22 C 6.702 22 6 21.298 6 20.433 Z"
-          fill="transparent"
-          strokeWidth="1.5"
-          stroke="rgb(54,56,83)"
-          strokeMiterlimit="10"
-          strokeDasharray=""
-        ></path>
+          d="M3 18.433C3 16.4308 4.45485 14.7254 6.43204 14.4098L6.61013 14.3814C8.19336 14.1287 9.80664 14.1287 11.3899 14.3814L11.568 14.4098C13.5451 14.7254 15 16.4308 15 18.433C15 19.2984 14.2984 20 13.433 20H4.56697C3.70156 20 3 19.2984 3 18.433Z"
+         stroke={style.color}
+          stroke-width={style.strokeWidth}
+        />
         <path
-          d="M 15.5 9.5 C 15.5 11.433 13.933 13 12 13 C 10.067 13 8.5 11.433 8.5 9.5 C 8.5 7.567 10.067 6 12 6 C 13.933 6 15.5 7.567 15.5 9.5 Z"
-          fill="transparent"
-          strokeWidth="1.5"
-          stroke="rgb(54,56,83)"
-          strokeMiterlimit="10"
-          strokeDasharray=""
-        ></path>
+          d="M12.5 7.5C12.5 9.433 10.933 11 9 11C7.067 11 5.5 9.433 5.5 7.5C5.5 5.567 7.067 4 9 4C10.933 4 12.5 5.567 12.5 7.5Z"
+         stroke={style.color}
+          stroke-width={style.strokeWidth}
+        />
+        <path
+          d="M15 11C16.933 11 18.5 9.433 18.5 7.5C18.5 5.567 16.933 4 15 4M17.3899 20H19.433C20.2984 20 21 19.2984 21 18.433C21 16.4308 19.5451 14.7254 17.568 14.4098V14.4098C17.4494 14.3909 17.3293 14.3814 17.2093 14.3814C16.8895 14.3814 16.7902 14.3814 16.2412 14.3814"
+         stroke={style.color}
+          stroke-width={style.strokeWidth}
+          stroke-linecap="round"
+        />
       </svg>
     </>
   );

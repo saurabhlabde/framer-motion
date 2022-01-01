@@ -1,20 +1,30 @@
 import React from "react";
+import { style } from ".";
 
 interface ISunIcon {}
 
 export const SunIcon = ({}: ISunIcon) => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+      <svg
+        width={style.HeightWidth}
+        height={style.HeightWidth}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
-          d="M 21.312 8.688 L 21.429 8.571 M 8.571 21.429 L 8.688 21.312 M 15 6.074 L 15 6 M 15 24 L 15 23.926 M 6.074 15 L 6 15 M 24 15 L 23.926 15 M 8.688 8.688 L 8.571 8.571 M 21.429 21.429 L 21.312 21.312"
-          fill="transparent"
-          strokeWidth="1.5"
-          stroke="rgb(54,56,83)"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeDasharray=""
-        ></path>
+          d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
+         stroke={style.color}
+          stroke-width={style.strokeWidth}
+        />
+        <path
+          d="M18.3117 5.68834L18.4286 5.57143M5.57144 18.4286L5.68832 18.3117M12 3.07394V3M12 21V20.9261M3.07394 12H3M21 12H20.9261M5.68831 5.68834L5.5714 5.57143M18.4286 18.4286L18.3117 18.3117"
+         stroke={style.color}
+          stroke-width={style.strokeWidth}
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
     </>
   );
