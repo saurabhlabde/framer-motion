@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const IndexMain = styled.div`
@@ -7,7 +8,7 @@ export const IndexMain = styled.div`
   flex-direction: column;
 `;
 
-export const Cards = styled.div`
+export const Cards = styled(motion.div)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,7 +17,7 @@ export const Cards = styled.div`
   padding: 0 15%;
 `;
 
-export const Heading = styled.div`
+export const Heading = styled(motion.div)`
   margin: 60px 0 130px 0;
   display: flex;
   align-items: center;
@@ -24,7 +25,7 @@ export const Heading = styled.div`
   width: 100%;
 `;
 
-export const HeadingTitle = styled.h1`
+export const HeadingTitle = styled(motion.h1)`
   font-weight: 500;
   font-family: "DM Mono", monospace;
   color: #000000;

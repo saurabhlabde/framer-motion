@@ -25,6 +25,8 @@ export const Card: React.FC<ICard> = ({ props }) => {
       key={`card-i-${id}`}
       whileHover={{
         scale: 1.05,
+        z: 100,
+        y: -50,
         transition: {
           type: "spring",
           stiffness: 100,
@@ -41,6 +43,8 @@ export const Card: React.FC<ICard> = ({ props }) => {
           <Button
             whileHover={{
               scale: 1.03,
+              z: 10,
+              y: -10,
               transition: {
                 type: "spring",
                 stiffness: 100,

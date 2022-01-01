@@ -82,7 +82,7 @@ const AnimatedLetters = ({ title }: ILetters) => (
 );
 
 interface ILetters {
-  title: string;
+  title: any;
 }
 
 const AnimatedHighlighLetters = ({ title }: ILetters) => (
